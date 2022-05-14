@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:e2e:headless": "vue-cli-service test:e2e --headless",
+    "coverage": "yarn nyc report",
+    "ci-test": "yarn test:e2e:headless && yarn coverage",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -17,6 +20,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.12",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -33,6 +37,7 @@
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
+    "babel-plugin-istanbul": "^6.1.1",
     "cypress": "^8.3.0",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.25.3",
