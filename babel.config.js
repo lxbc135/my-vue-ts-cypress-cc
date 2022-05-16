@@ -2,5 +2,5 @@ module.exports = {
   presets: [
     '@vue/cli-plugin-babel/preset',
   ],
-  plugins: ['istanbul'],
+  plugins: process.env.E2E ? ['istanbul'] : [],
 };

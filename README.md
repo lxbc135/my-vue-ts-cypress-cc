@@ -49,4 +49,5 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Reference
+* [Complete Code Coverage with Cypress](https://docs.cypress.io/guides/tooling/code-coverage#What-you-ll-learn)
 * [@cypress/code-coverage](https://github.com/cypress-io/code-coverage)

@@ -2,9 +2,13 @@
 node_modules
 /dist
 
-/tests/e2e/videos/
-/tests/e2e/screenshots/
 /.nyc_output/
+/_cypress-coverage/
+/_jest-coverage/
+/_reports/
+/cypress/downloads/
+/cypress/screenshots/
+/cypress/videos/
 /coverage/
 
 # local env files
